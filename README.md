@@ -8,11 +8,11 @@ As a client of TechStore, I want to be able to interact with an API to manage my
 
 As a client, I want to be able to securely log in to the TechStore API to access my account and manage my products.
 
-- Endpoint: `/authentication`
+- Endpoint: `/api/authentication`
 - Method: `POST`
 - Parameters:
-  - `email` - The email of the client
-  - `password` - The password of the client
+  - `email` - The email(user@user.com) of the client
+  - `password` - The password(123456) of the client
 - Response: 
   - `200 OK` - Successful authentication, returns a token for subsequent requests.
   - `401 Unauthorized` - Invalid credentials.
